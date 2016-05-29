@@ -1,0 +1,99 @@
+package Product;
+use strict;
+use warnings FATAL => 'all';
+
+sub new {
+    my $class = shift;
+    my $self = {
+        # Properties (Hash)
+        dic_props => shift,
+    };
+    # Add additional entities to object Product
+    # product reference (no by default)
+    $self->{isRef} = 0;
+    # Nb of categories' intersections with reference product:
+    # while fetching similar products, always 1 at creation since there was a match on a category
+    $self->{nb_categories_intersect_with_ref} = 1;
+    # Proximity with product reference is computed later on
+    $self->{score_proximity} = 0;  # X-axis
+    $self->{score_nutrition} = 0;  # Y-axis
+    # exclude from graph if no comparison possible.
+    # We can add exclusion criteria such as:
+    #  * generic-name is empty
+    #  * too far in similarity with reference product (nb categories intersections too low)
+    $self->{excludeFromGraph} = 0;
+
+    bless $self, $class;
+    return $self;
+}
+
+sub get_id {
+    my ( $self ) = @_;
+    my $dic_props = $self->{dic_props};
+    return $dic_props->{"_id"};
+}
+
+sub set_as_reference {
+    my ( $self, $is_ref ) = @_;
+    $self->{isRef} = $is_ref;
+
+    if ($is_ref eq 1) {
+        $self->{score_proximity} = 1;
+        # compute also the nutrition score
+        $self->calc_score_nutrition();
+    }
+}
+
+sub incr_intersection_with_ref {
+    # When a match on category is found with product reference, then we increment the number of intersected categories
+    # ..in order to speed up a bit the proximity computation thereafter
+    my ( $self ) = @_;
+    $self->{nb_categories_intersect_with_ref} += 1;
+}
+
+sub compute_scores {
+    my ( $self, $product_ref ) = @_;
+    $self->calc_score_proximity($product_ref);
+    $self->calc_score_nutrition();
+}
+
+sub calc_score_proximity {
+    # The bigger the intersection of categories between self and product_ref, the closer
+    # Note: if intersection is 100%, then proximity is 100%
+    # Proximity = nb_categ_intersect / nb_categ_prod_ref
+    #  :rtype: None
+    #  :param product_ref: object Product
+    #  :return:
+    my ( $self, $product_ref ) = @_;
+    my $dic_props = $self->{dic_props};
+    # categories_tags is an Array
+    my $nb_categs_ref = scalar @{$dic_props->{"categories_tags"}};
+#    print "nb categories for product ref .. $nb_categs_ref", "\n";
+    $self->{score_proximity} = $self->{nb_categories_intersect_with_ref} / $nb_categs_ref;
+#    print "score proximity is ", $self->{score_proximity}, "\n";
+}
+
+sub calc_score_nutrition {
+    # see : http://fr.openfoodfacts.org/score-nutritionnel-france
+    my ( $self ) = @_;
+    my $dic_props = $self->{dic_props};
+    # nutriments is a Hash
+    my $nutriments = $dic_props->{"nutriments"};
+#    print $nutriments, "\n";
+    if (!(exists( $nutriments->{"nutrition-score-uk"} ))) {
+        # add security in case this is the product reference (we want it to be shown in the graph)
+        if ($self->{isRef} == 1) {
+            $self->{score_nutrition} = 0;
+            $self->{score_proximity} = 0;
+        } else {
+            $self->{excludeFromGraph} = 1;
+        }
+    } else {
+        # todo: to be reviewed for waters, countries, etc., as explained in the above url
+        # initialize: Data Environment, Gui for display, and Querier
+        $self->{score_nutrition} = int( $nutriments->{"nutrition-score-uk"} );
+    }
+#    print "score nutrition is ", $self->{score_nutrition}, "\n";
+}
+
+1;

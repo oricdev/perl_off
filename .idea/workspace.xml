@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7f739fd6-1e38-4fd1-b3cd-ca657469427b" name="Default" comment="" />
+    <ignored path="off.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="off" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Querier.pm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Querier.pm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="155" column="50" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
+              <folding>
+                <element signature="e#58#70#0#Perl5" expanded="true" />
+                <element signature="e#1418#1468#0#Perl5" expanded="true" />
+                <element signature="e#2090#2126#0#Perl5" expanded="true" />
+                <element signature="e#2833#2863#0#Perl5" expanded="true" />
+                <element signature="e#3115#3158#0#Perl5" expanded="true" />
+                <element signature="e#3445#3500#0#Perl5" expanded="true" />
+                <element signature="e#3936#3991#0#Perl5" expanded="true" />
+                <element signature="e#5294#5322#0#Perl5" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.pl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.pl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="460">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding>
+                <element signature="e#58#75#0#Perl5" expanded="true" />
+                <element signature="e#657#685#0#Perl5" expanded="true" />
+                <element signature="e#2131#2136#0#Perl5" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fic_1.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/fic_1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Product.pm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Product.pm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="98" column="2" selection-start-line="98" selection-start-column="2" selection-end-line="98" selection-end-column="2" />
+              <folding>
+                <element signature="e#176#219#0#Perl5" expanded="true" />
+                <element signature="e#288#345#0#Perl5" expanded="true" />
+                <element signature="e#647#694#0#Perl5" expanded="true" />
+                <element signature="e#956#1054#0#Perl5" expanded="false" />
+                <element signature="e#1077#1293#0#Perl5" expanded="false" />
+                <element signature="e#1332#1446#0#Perl5" expanded="true" />
+                <element signature="e#1771#1855#0#Perl5" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataEnv.pm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataEnv.pm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gui.pm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gui.pm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Graph.pm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Graph.pm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="125" column="24" selection-start-line="125" selection-start-column="24" selection-end-line="125" selection-end-column="24" />
+              <folding>
+                <element signature="e#57#77#0#Perl5" expanded="true" />
+                <element signature="e#139#1484#0#Perl5" expanded="false" />
+                <element signature="e#596#643#0#Perl5" expanded="true" />
+                <element signature="e#1036#1088#0#Perl5" expanded="true" />
+                <element signature="e#5167#6015#0#Perl5" expanded="false" />
+                <element signature="e#5384#5443#0#Perl5" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Perl5 script" />
+        <option value="Perl5 package" />
+      </list>
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Gui.pm" />
+        <option value="$PROJECT_DIR$/main.pm" />
+        <option value="$PROJECT_DIR$/out/production/off/main.pl" />
+        <option value="$PROJECT_DIR$/DataEnv.pm" />
+        <option value="$PROJECT_DIR$/Querier.pm" />
+        <option value="$PROJECT_DIR$/Product.pm" />
+        <option value="$PROJECT_DIR$/main.pl" />
+        <option value="$PROJECT_DIR$/Graph.pm" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Bundled (Maven 3)" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="Perl5XSubsState">
+    <option name="isActual" value="false" />
+    <option name="filesMap">
+      <map>
+        <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-gnu-thread-multi/auto/Data/MessagePack/MessagePack.so" value="1464296785000" />
+        <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-gnu-thread-multi/auto/Date/Simple/Simple.so" value="1464296809000" />
+        <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-gnu-thread-multi/auto/Mouse/Mouse.so" value="1464296783000" />
+        <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-gnu-thread-multi/auto/Net/IDN/Punycode/Punycode.so" value="1464296673000" />
+        <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-gnu-thread-multi/auto/PerlIO/utf8_strict/utf8_strict.so" value="1464296838000" />
+        <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-gnu-thread-multi/auto/Test/LeakTrace/LeakTrace.so" value="1464296751000" />
+        <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-gnu-thread-multi/auto/Text/Xslate/Xslate.so" value="1464296787000" />
+        <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-gnu-thread-multi/auto/Want/Want.so" value="1464296738000" />
+        <entry key="$USER_HOME$/perl5/lib/perl5/x86_64-linux-gnu-thread-multi/auto/XML/Bare/Bare.so" value="1464296707000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl-base/auto/Cwd/Cwd.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl-base/auto/Fcntl/Fcntl.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl-base/auto/File/Glob/Glob.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl-base/auto/Hash/Util/Util.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl-base/auto/IO/IO.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl-base/auto/List/Util/Util.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl-base/auto/POSIX/POSIX.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl-base/auto/Socket/Socket.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl-base/auto/attributes/attributes.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl-base/auto/re/re.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/B/B.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Compress/Raw/Bzip2/Bzip2.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Compress/Raw/Zlib/Zlib.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Cwd/Cwd.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/DB_File/DB_File.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Data/Dumper/Dumper.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Devel/PPPort/PPPort.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Devel/Peek/Peek.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Digest/MD5/MD5.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Digest/SHA/SHA.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Encode/Byte/Byte.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Encode/CN/CN.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Encode/EBCDIC/EBCDIC.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Encode/Encode.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Encode/JP/JP.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Encode/KR/KR.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Encode/Symbol/Symbol.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Encode/TW/TW.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Encode/Unicode/Unicode.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Fcntl/Fcntl.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/File/DosGlob/DosGlob.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/File/Glob/Glob.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Filter/Util/Call/Call.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/GDBM_File/GDBM_File.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Hash/Util/FieldHash/FieldHash.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Hash/Util/Util.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/I18N/Langinfo/Langinfo.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/IO/IO.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/IPC/SysV/SysV.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/List/Util/Util.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/MIME/Base64/Base64.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Math/BigInt/FastCalc/FastCalc.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/NDBM_File/NDBM_File.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/ODBM_File/ODBM_File.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Opcode/Opcode.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/POSIX/POSIX.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/PerlIO/encoding/encoding.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/PerlIO/mmap/mmap.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/PerlIO/scalar/scalar.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/PerlIO/via/via.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/SDBM_File/SDBM_File.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Socket/Socket.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Storable/Storable.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Sys/Hostname/Hostname.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Sys/Syslog/Syslog.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Tie/Hash/NamedCapture/NamedCapture.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Time/HiRes/HiRes.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Time/Piece/Piece.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/Unicode/Collate/Collate.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/arybase/arybase.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/attributes/attributes.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/mro/mro.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/re/re.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/threads/shared/shared.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl/5.22.1/auto/threads/threads.so" value="1457870058000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/APR.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/Base64/Base64.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/Brigade/Brigade.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/Bucket/Bucket.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/BucketAlloc/BucketAlloc.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/BucketType/BucketType.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/Const/Const.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/Date/Date.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/Error/Error.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/Finfo/Finfo.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/IpSubnet/IpSubnet.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/OS/OS.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/PerlIO/PerlIO.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/Pool/Pool.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/SockAddr/SockAddr.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/Socket/Socket.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/Status/Status.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/String/String.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/Table/Table.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/ThreadMutex/ThreadMutex.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/ThreadRWLock/ThreadRWLock.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/URI/URI.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/UUID/UUID.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/APR/Util/Util.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Algorithm/Diff/XS/XS.so" value="1450365007000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/Access/Access.so" value="1450448748000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/CmdParms/CmdParms.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/Command/Command.so" value="1450448748000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/Connection/Connection.so" value="1450448748000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/ConnectionUtil/ConnectionUtil.so" value="1450448748000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/Const/Const.so" value="1450448748000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/Directive/Directive.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/Filter/Filter.so" value="1450448748000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/FilterRec/FilterRec.so" value="1450448748000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/HookRun/HookRun.so" value="1450448748000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/Log/Log.so" value="1450448748000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/MPM/MPM.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/Module/Module.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/Process/Process.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/Provider/Provider.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/RequestIO/RequestIO.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/RequestRec/RequestRec.so" value="1450448748000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/RequestUtil/RequestUtil.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/Response/Response.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/ServerRec/ServerRec.so" value="1450448748000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/ServerUtil/ServerUtil.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/SubProcess/SubProcess.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/SubRequest/SubRequest.so" value="1450448748000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/URI/URI.so" value="1450448748000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Apache2/Util/Util.so" value="1450448748000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/AptPkg/AptPkg.so" value="1450365110000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/B/Hooks/OP/Check/Check.so" value="1450365463000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/BSD/Resource/Resource.so" value="1450365914000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Barcode/ZBar/ZBar.so" value="1453947226000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Cache/Memcached/Fast/Fast.so" value="1450389505000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Cairo/Cairo.so" value="1450436201000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Class/C3/XS/XS.so" value="1450436173000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Class/Load/XS/XS.so" value="1450409754000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Class/XSAccessor/XSAccessor.so" value="1450366302000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Clone/Clone.so" value="1450399055000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/DBD/SQLite/SQLite.so" value="1455556477000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/DBI/DBI.so" value="1450367645000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Data/Alias/Alias.so" value="1450390316000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/DateTime/DateTime.so" value="1450471650000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Devel/Caller/Caller.so" value="1450439587000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Devel/LexAlias/LexAlias.so" value="1450472802000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Encode/Detect/Detector/Detector.so" value="1450390989000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/FCGI/FCGI.so" value="1450368099000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/File/FcntlLock/FcntlLock.so" value="1452260608000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Geo/IP/IP.so" value="1450391669000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Glib/Glib.so" value="1451777148000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Gtk2/Gtk2.so" value="1455773452000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/HTML/Parser/Parser.so" value="1453417830000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/IO/Tty/Tty.so" value="1450369033000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Image/Magick/Magick.so" value="1460984896000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Image/Magick/Q16/Q16.so" value="1460984896000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/JSON/XS/XS.so" value="1450451737000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Lexical/SealRequireHints/SealRequireHints.so" value="1450369724000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/LibAppArmor/LibAppArmor.so" value="1460514220000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/List/MoreUtils/MoreUtils.so" value="1450369803000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Locale/gettext/gettext.so" value="1450363717000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/ModPerl/Const/Const.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/ModPerl/Global/Global.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/ModPerl/InterpPool/InterpPool.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/ModPerl/Interpreter/Interpreter.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/ModPerl/TiPool/TiPool.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/ModPerl/TiPoolConfig/TiPoolConfig.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/ModPerl/Util/Util.so" value="1450448747000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/MongoDB/MongoDB.so" value="1455340452000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Moose/Moose.so" value="1450477423000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Net/DBus/DBus.so" value="1450400624000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Net/DNS/DNS.so" value="1450400683000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Net/LibIDN/LibIDN.so" value="1450370006000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Net/SSLeay/SSLeay.so" value="1450370068000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/NetAddr/IP/Util/Util.so" value="1450462052000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Package/Stash/XS/XS.so" value="1450370228000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/PadWalker/PadWalker.so" value="1450370320000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Pango/Pango.so" value="1455773387000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Params/Classify/Classify.so" value="1450370462000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Params/Util/Util.so" value="1450370503000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Params/Validate/XS/XS.so" value="1455426672000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Parse/ExuberantCTags/ExuberantCTags.so" value="1450393547000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/PerlIO/gzip/gzip.so" value="1450370471000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Socket6/Socket6.so" value="1450370675000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Sub/Identify/Identify.so" value="1450370883000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Sub/Name/Name.so" value="1450370947000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Term/ReadLine/Gnu/Gnu.so" value="1450394960000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Text/CharWidth/CharWidth.so" value="1450363768000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Text/Iconv/Iconv.so" value="1450363756000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Text/Soundex/Soundex.so" value="1450371818000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Text/Unaccent/Unaccent.so" value="1458173254000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Type/Tiny/XS/XS.so" value="1450400369000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/URI/Escape/XS/XS.so" value="1450462134000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Unicode/UTF8/UTF8.so" value="1450462129000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Variable/Magic/Magic.so" value="1450372614000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/AUI/AUI.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/Calendar/Calendar.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/DND/DND.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/DataView/DataView.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/DateTime/DateTime.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/DocView/DocView.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/FS/FS.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/Grid/Grid.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/Help/Help.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/Html/Html.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/IPC/IPC.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/MDI/MDI.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/Media/Media.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/PerlTest/PerlTest.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/Print/Print.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/PropertyGrid/PropertyGrid.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/Ribbon/Ribbon.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/RichText/RichText.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/STC/STC.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/Scintilla/Scintilla.so" value="1450501222000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/Scintilla/libwx_gtk2u_scintilla-3.0.2.so" value="1450501222000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/Socket/Socket.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/Wx.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/Wx/XRC/XRC.so" value="1450499559000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/XML/LibXML/LibXML.so" value="1450364481000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/XML/Parser/Expat/Expat.so" value="1450372839000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/YAML/XS/LibYAML/LibYAML.so" value="1450372897000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/bareword/filehandles/filehandles.so" value="1450436201000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/indirect/indirect.so" value="1450474168000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/multidimensional/multidimensional.so" value="1450452090000" />
+        <entry key="/usr/lib/x86_64-linux-gnu/perl5/5.22/auto/version/vxs/vxs.so" value="1450395765000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/APR.so" value="1464297564000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/Base64/Base64.so" value="1464297548000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/Brigade/Brigade.so" value="1464297548000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/Bucket/Bucket.so" value="1464297549000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/BucketAlloc/BucketAlloc.so" value="1464297549000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/BucketType/BucketType.so" value="1464297549000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/Const/Const.so" value="1464297564000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/Date/Date.so" value="1464297549000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/Error/Error.so" value="1464297550000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/Finfo/Finfo.so" value="1464297550000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/IpSubnet/IpSubnet.so" value="1464297550000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/OS/OS.so" value="1464297551000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/PerlIO/PerlIO.so" value="1464297565000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/Pool/Pool.so" value="1464297551000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/SockAddr/SockAddr.so" value="1464297551000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/Socket/Socket.so" value="1464297552000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/Status/Status.so" value="1464297552000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/String/String.so" value="1464297552000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/Table/Table.so" value="1464297553000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/ThreadMutex/ThreadMutex.so" value="1464297553000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/ThreadRWLock/ThreadRWLock.so" value="1464297553000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/URI/URI.so" value="1464297553000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/UUID/UUID.so" value="1464297554000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/APR/Util/Util.so" value="1464297554000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/Access/Access.so" value="1464297554000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/CmdParms/CmdParms.so" value="1464297555000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/Command/Command.so" value="1464297555000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/Connection/Connection.so" value="1464297555000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/ConnectionUtil/ConnectionUtil.so" value="1464297556000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/Const/Const.so" value="1464297565000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/Directive/Directive.so" value="1464297556000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/Filter/Filter.so" value="1464297556000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/FilterRec/FilterRec.so" value="1464297557000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/HookRun/HookRun.so" value="1464297557000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/Log/Log.so" value="1464297557000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/MPM/MPM.so" value="1464297558000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/Module/Module.so" value="1464297558000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/Process/Process.so" value="1464297558000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/RequestIO/RequestIO.so" value="1464297559000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/RequestRec/RequestRec.so" value="1464297559000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/RequestUtil/RequestUtil.so" value="1464297560000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/Response/Response.so" value="1464297560000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/ServerRec/ServerRec.so" value="1464297560000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/ServerUtil/ServerUtil.so" value="1464297561000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/SubProcess/SubProcess.so" value="1464297561000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/SubRequest/SubRequest.so" value="1464297561000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/URI/URI.so" value="1464297562000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/Apache2/Util/Util.so" value="1464297562000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/ModPerl/Const/Const.so" value="1464297566000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/ModPerl/Global/Global.so" value="1464297562000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/ModPerl/InterpPool/InterpPool.so" value="1464297562000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/ModPerl/Interpreter/Interpreter.so" value="1464297563000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/ModPerl/TiPool/TiPool.so" value="1464297563000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/ModPerl/TiPoolConfig/TiPoolConfig.so" value="1464297563000" />
+        <entry key="/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/ModPerl/Util/Util.so" value="1464297563000" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="2" />
+    <option name="y" value="3" />
+    <option name="width" value="959" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="off" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="off" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="perl_off" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected="Perl.main.pl">
+    <configuration default="false" name="main.pl" type="#PerlConfigurationType" factoryName="Perl" temporary="true" nameIsGenerated="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/main.pl" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="PERL_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="CHARSET" value="UTF-8" />
+      <option name="USE_ALTERNATIVE_SDK" value="false" />
+      <option name="ALTERNATIVE_SDK_PATH" />
+      <option name="scriptCharset" value="utf8" />
+      <option name="startMode" value="RUN" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#PerlConfigurationType" factoryName="Perl">
+      <option name="SCRIPT_PATH" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="PERL_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="CHARSET" />
+      <option name="USE_ALTERNATIVE_SDK" value="false" />
+      <option name="ALTERNATIVE_SDK_PATH" />
+      <option name="scriptCharset" value="utf8" />
+      <option name="startMode" value="RUN" />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="off" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Perl.main.pl" />
+    </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Perl.main.pl" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7f739fd6-1e38-4fd1-b3cd-ca657469427b" name="Default" comment="" />
+      <created>1464431522721</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1464431522721</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="2" y="3" width="959" height="1038" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40190881" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19581152" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3997923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Querier.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#58#70#0#Perl5" expanded="true" />
+            <element signature="e#1418#1468#0#Perl5" expanded="true" />
+            <element signature="e#2090#2126#0#Perl5" expanded="true" />
+            <element signature="e#2833#2863#0#Perl5" expanded="true" />
+            <element signature="e#3115#3158#0#Perl5" expanded="true" />
+            <element signature="e#3445#3500#0#Perl5" expanded="true" />
+            <element signature="e#3936#3991#0#Perl5" expanded="true" />
+            <element signature="e#5294#5322#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/share/perl5/JSON.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding>
+            <element signature="e#58#75#0#Perl5" expanded="true" />
+            <element signature="e#657#685#0#Perl5" expanded="true" />
+            <element signature="e#2131#2136#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataEnv.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="33" column="41" selection-start-line="33" selection-start-column="41" selection-end-line="33" selection-end-column="41" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Deparsed_XSubs.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15327">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.pm" />
+    <entry file="file://$PROJECT_DIR$/out/production/off/main.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/share/perl5/find.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="42" column="4" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/share/perl5/JSON.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataEnv.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Querier.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="155" column="50" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
+          <folding>
+            <element signature="e#58#70#0#Perl5" expanded="true" />
+            <element signature="e#1418#1468#0#Perl5" expanded="true" />
+            <element signature="e#2090#2126#0#Perl5" expanded="true" />
+            <element signature="e#2833#2863#0#Perl5" expanded="true" />
+            <element signature="e#3115#3158#0#Perl5" expanded="true" />
+            <element signature="e#3445#3500#0#Perl5" expanded="true" />
+            <element signature="e#3936#3991#0#Perl5" expanded="true" />
+            <element signature="e#5294#5322#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Product.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="98" column="2" selection-start-line="98" selection-start-column="2" selection-end-line="98" selection-end-column="2" />
+          <folding>
+            <element signature="e#176#219#0#Perl5" expanded="true" />
+            <element signature="e#288#345#0#Perl5" expanded="true" />
+            <element signature="e#647#694#0#Perl5" expanded="true" />
+            <element signature="e#956#1054#0#Perl5" expanded="false" />
+            <element signature="e#1077#1293#0#Perl5" expanded="false" />
+            <element signature="e#1332#1446#0#Perl5" expanded="true" />
+            <element signature="e#1771#1855#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/report.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="e#58#75#0#Perl5" expanded="true" />
+            <element signature="e#657#685#0#Perl5" expanded="true" />
+            <element signature="e#2131#2136#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fic_1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="125" column="24" selection-start-line="125" selection-start-column="24" selection-end-line="125" selection-end-column="24" />
+          <folding>
+            <element signature="e#57#77#0#Perl5" expanded="true" />
+            <element signature="e#139#1484#0#Perl5" expanded="false" />
+            <element signature="e#596#643#0#Perl5" expanded="true" />
+            <element signature="e#1036#1088#0#Perl5" expanded="true" />
+            <element signature="e#5167#6015#0#Perl5" expanded="false" />
+            <element signature="e#5384#5443#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
