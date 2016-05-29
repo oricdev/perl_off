@@ -110,7 +110,7 @@ sub prepare_graph {
     my $product_ref_props = $product_ref->{dic_props};
     my $code_product = $product_ref_props->{"code"};
 
-    my $fic_name = 'fic_1.html';
+    my $fic_name = '_graph.html';
     open(my $fh, '>', $fic_name);
     print $fh "<!doctype html>";
     print $fh '<html class="no-js" lang="fr">';
