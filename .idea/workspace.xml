@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="7f739fd6-1e38-4fd1-b3cd-ca657469427b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph.pm" afterPath="$PROJECT_DIR$/Graph.pm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Querier.pm" afterPath="$PROJECT_DIR$/Querier.pm" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_graph.html" afterPath="$PROJECT_DIR$/_graph.html" />
     </list>
     <ignored path="off.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,18 +31,50 @@
       <file leaf-file-name="Querier.pm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Querier.pm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2412">
-              <caret line="155" column="50" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
+            <state relative-caret-position="90">
+              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="21" />
               <folding>
-                <element signature="e#58#70#0#Perl5" expanded="true" />
                 <element signature="e#1418#1468#0#Perl5" expanded="true" />
                 <element signature="e#2090#2126#0#Perl5" expanded="true" />
                 <element signature="e#2833#2863#0#Perl5" expanded="true" />
                 <element signature="e#3115#3158#0#Perl5" expanded="true" />
-                <element signature="e#3445#3500#0#Perl5" expanded="true" />
-                <element signature="e#3936#3991#0#Perl5" expanded="true" />
-                <element signature="e#5294#5322#0#Perl5" expanded="true" />
+                <element signature="e#3684#3739#0#Perl5" expanded="true" />
+                <element signature="e#4175#4230#0#Perl5" expanded="true" />
+                <element signature="e#5533#5561#0#Perl5" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PointRepartition.pm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PointRepartition.pm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="381">
+              <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+              <folding>
+                <element signature="e#67#93#0#Perl5" expanded="true" />
+                <element signature="e#133#204#0#Perl5" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="poc_d3js_3017620429484.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/poc_d3js_3017620429484.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="199" column="36" selection-start-line="199" selection-start-column="36" selection-end-line="199" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Random.pm" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/perl5/lib/perl5/x86_64-linux-gnu-thread-multi/Math/Random.pm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="300" column="4" selection-start-line="300" selection-start-column="4" selection-end-line="300" selection-end-column="4" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -46,11 +82,10 @@
       <file leaf-file-name="main.pl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.pl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="954">
-              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="-429">
+              <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
               <folding>
                 <element signature="e#58#75#0#Perl5" expanded="true" />
-                <element signature="e#657#685#0#Perl5" expanded="true" />
                 <element signature="e#2131#2136#0#Perl5" expanded="true" />
               </folding>
             </state>
@@ -60,7 +95,7 @@
       <file leaf-file-name="Product.pm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Product.pm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1530">
+            <state relative-caret-position="597">
               <caret line="98" column="2" selection-start-line="98" selection-start-column="2" selection-end-line="98" selection-end-column="2" />
               <folding>
                 <element signature="e#176#219#0#Perl5" expanded="true" />
@@ -78,7 +113,7 @@
       <file leaf-file-name="DataEnv.pm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataEnv.pm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
+            <state relative-caret-position="270">
               <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -97,18 +132,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Graph.pm" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Graph.pm" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Graph.pm">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-11">
-              <caret line="92" column="24" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+            <state relative-caret-position="306">
+              <caret line="146" column="29" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
               <folding>
-                <element signature="e#57#77#0#Perl5" expanded="true" />
-                <element signature="e#139#1484#0#Perl5" expanded="false" />
-                <element signature="e#596#643#0#Perl5" expanded="true" />
-                <element signature="e#1036#1088#0#Perl5" expanded="true" />
-                <element signature="e#5168#6016#0#Perl5" expanded="false" />
-                <element signature="e#5385#5444#0#Perl5" expanded="true" />
+                <element signature="e#88#108#0#Perl5" expanded="true" />
+                <element signature="e#627#674#0#Perl5" expanded="true" />
+                <element signature="e#1067#1119#0#Perl5" expanded="true" />
+                <element signature="e#4759#4801#0#Perl5" expanded="true" />
+                <element signature="e#5519#5560#0#Perl5" expanded="true" />
+                <element signature="e#6159#6203#0#Perl5" expanded="true" />
+                <element signature="e#6545#6656#0#Perl5" expanded="true" />
+                <element signature="e#22102#22161#0#Perl5" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,8 +154,8 @@
       <file leaf-file-name="_graph.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+            <state relative-caret-position="162">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -149,11 +186,13 @@
         <option value="$PROJECT_DIR$/main.pm" />
         <option value="$PROJECT_DIR$/out/production/off/main.pl" />
         <option value="$PROJECT_DIR$/DataEnv.pm" />
-        <option value="$PROJECT_DIR$/Querier.pm" />
         <option value="$PROJECT_DIR$/Product.pm" />
         <option value="$PROJECT_DIR$/main.pl" />
-        <option value="$PROJECT_DIR$/Graph.pm" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/Querier.pm" />
+        <option value="$PROJECT_DIR$/_graph.html" />
+        <option value="$PROJECT_DIR$/Graph.pm" />
+        <option value="$PROJECT_DIR$/PointRepartition.pm" />
       </list>
     </option>
   </component>
@@ -447,10 +486,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
-    <option name="y" value="-6" />
-    <option name="width" value="1924" />
-    <option name="height" value="1058" />
+    <option name="x" value="209" />
+    <option name="y" value="8" />
+    <option name="width" value="1418" />
+    <option name="height" value="1042" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -459,7 +498,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -497,15 +536,15 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.splitter.proportion" value="0.27061105" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -857,27 +896,33 @@
       <option name="project" value="LOCAL" />
       <updated>1464547441458</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="clean-up">
+      <created>1464547496028</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1464547496028</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-6" width="1924" height="1058" extended-state="6" />
+    <frame x="209" y="8" width="1418" height="1042" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3030623" sideWeight="0.50282884" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40186915" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3030623" sideWeight="0.49717113" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1953125" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26379067" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -887,9 +932,21 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32917964" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.md" />
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -909,19 +966,36 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/DataEnv.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Querier.pm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2412">
           <caret line="155" column="50" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
           <folding>
-            <element signature="e#58#70#0#Perl5" expanded="true" />
             <element signature="e#1418#1468#0#Perl5" expanded="true" />
             <element signature="e#2090#2126#0#Perl5" expanded="true" />
             <element signature="e#2833#2863#0#Perl5" expanded="true" />
             <element signature="e#3115#3158#0#Perl5" expanded="true" />
-            <element signature="e#3445#3500#0#Perl5" expanded="true" />
-            <element signature="e#3936#3991#0#Perl5" expanded="true" />
-            <element signature="e#5294#5322#0#Perl5" expanded="true" />
+            <element signature="e#3684#3739#0#Perl5" expanded="true" />
+            <element signature="e#4175#4230#0#Perl5" expanded="true" />
+            <element signature="e#5533#5561#0#Perl5" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -932,17 +1006,8 @@
           <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
             <element signature="e#58#75#0#Perl5" expanded="true" />
-            <element signature="e#657#685#0#Perl5" expanded="true" />
             <element signature="e#2131#2136#0#Perl5" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fic_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -985,12 +1050,240 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#57#77#0#Perl5" expanded="true" />
-            <element signature="e#139#1484#0#Perl5" expanded="false" />
-            <element signature="e#596#643#0#Perl5" expanded="true" />
-            <element signature="e#1036#1088#0#Perl5" expanded="true" />
-            <element signature="e#5168#6016#0#Perl5" expanded="false" />
-            <element signature="e#5385#5444#0#Perl5" expanded="true" />
+            <element signature="e#88#108#0#Perl5" expanded="true" />
+            <element signature="e#627#674#0#Perl5" expanded="true" />
+            <element signature="e#1067#1119#0#Perl5" expanded="true" />
+            <element signature="e#4759#4801#0#Perl5" expanded="true" />
+            <element signature="e#5519#5560#0#Perl5" expanded="true" />
+            <element signature="e#6159#6203#0#Perl5" expanded="true" />
+            <element signature="e#6545#6656#0#Perl5" expanded="true" />
+            <element signature="e#22102#22161#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_graph.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Querier.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2412">
+          <caret line="155" column="50" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
+          <folding>
+            <element signature="e#1418#1468#0#Perl5" expanded="true" />
+            <element signature="e#2090#2126#0#Perl5" expanded="true" />
+            <element signature="e#2833#2863#0#Perl5" expanded="true" />
+            <element signature="e#3115#3158#0#Perl5" expanded="true" />
+            <element signature="e#3684#3739#0#Perl5" expanded="true" />
+            <element signature="e#4175#4230#0#Perl5" expanded="true" />
+            <element signature="e#5533#5561#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="e#58#75#0#Perl5" expanded="true" />
+            <element signature="e#2131#2136#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Product.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="98" column="2" selection-start-line="98" selection-start-column="2" selection-end-line="98" selection-end-column="2" />
+          <folding>
+            <element signature="e#176#219#0#Perl5" expanded="true" />
+            <element signature="e#288#345#0#Perl5" expanded="true" />
+            <element signature="e#647#694#0#Perl5" expanded="true" />
+            <element signature="e#956#1054#0#Perl5" expanded="false" />
+            <element signature="e#1077#1293#0#Perl5" expanded="false" />
+            <element signature="e#1332#1446#0#Perl5" expanded="true" />
+            <element signature="e#1771#1855#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataEnv.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#88#108#0#Perl5" expanded="true" />
+            <element signature="e#627#674#0#Perl5" expanded="true" />
+            <element signature="e#1067#1119#0#Perl5" expanded="true" />
+            <element signature="e#4759#4801#0#Perl5" expanded="true" />
+            <element signature="e#5519#5560#0#Perl5" expanded="true" />
+            <element signature="e#6159#6203#0#Perl5" expanded="true" />
+            <element signature="e#6545#6656#0#Perl5" expanded="true" />
+            <element signature="e#22102#22161#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_graph.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Querier.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#1418#1468#0#Perl5" expanded="true" />
+            <element signature="e#2090#2126#0#Perl5" expanded="true" />
+            <element signature="e#2833#2863#0#Perl5" expanded="true" />
+            <element signature="e#3115#3158#0#Perl5" expanded="true" />
+            <element signature="e#3684#3739#0#Perl5" expanded="true" />
+            <element signature="e#4175#4230#0#Perl5" expanded="true" />
+            <element signature="e#5533#5561#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="e#58#75#0#Perl5" expanded="true" />
+            <element signature="e#2131#2136#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Product.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="98" column="2" selection-start-line="98" selection-start-column="2" selection-end-line="98" selection-end-column="2" />
+          <folding>
+            <element signature="e#176#219#0#Perl5" expanded="true" />
+            <element signature="e#288#345#0#Perl5" expanded="true" />
+            <element signature="e#647#694#0#Perl5" expanded="true" />
+            <element signature="e#956#1054#0#Perl5" expanded="false" />
+            <element signature="e#1077#1293#0#Perl5" expanded="false" />
+            <element signature="e#1332#1446#0#Perl5" expanded="true" />
+            <element signature="e#1771#1855#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataEnv.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Querier.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2412">
+          <caret line="155" column="50" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
+          <folding>
+            <element signature="e#1418#1468#0#Perl5" expanded="true" />
+            <element signature="e#2090#2126#0#Perl5" expanded="true" />
+            <element signature="e#2833#2863#0#Perl5" expanded="true" />
+            <element signature="e#3115#3158#0#Perl5" expanded="true" />
+            <element signature="e#3684#3739#0#Perl5" expanded="true" />
+            <element signature="e#4175#4230#0#Perl5" expanded="true" />
+            <element signature="e#5533#5561#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="954">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="e#58#75#0#Perl5" expanded="true" />
+            <element signature="e#2131#2136#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fic_1.html" />
+    <entry file="file://$PROJECT_DIR$/Product.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="98" column="2" selection-start-line="98" selection-start-column="2" selection-end-line="98" selection-end-column="2" />
+          <folding>
+            <element signature="e#176#219#0#Perl5" expanded="true" />
+            <element signature="e#288#345#0#Perl5" expanded="true" />
+            <element signature="e#647#694#0#Perl5" expanded="true" />
+            <element signature="e#956#1054#0#Perl5" expanded="false" />
+            <element signature="e#1077#1293#0#Perl5" expanded="false" />
+            <element signature="e#1332#1446#0#Perl5" expanded="true" />
+            <element signature="e#1771#1855#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataEnv.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Graph.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#88#108#0#Perl5" expanded="true" />
+            <element signature="e#627#674#0#Perl5" expanded="true" />
+            <element signature="e#1067#1119#0#Perl5" expanded="true" />
+            <element signature="e#4759#4801#0#Perl5" expanded="true" />
+            <element signature="e#5519#5560#0#Perl5" expanded="true" />
+            <element signature="e#6159#6203#0#Perl5" expanded="true" />
+            <element signature="e#6545#6656#0#Perl5" expanded="true" />
+            <element signature="e#22102#22161#0#Perl5" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1000,14 +1293,13 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#58#70#0#Perl5" expanded="true" />
             <element signature="e#1418#1468#0#Perl5" expanded="true" />
             <element signature="e#2090#2126#0#Perl5" expanded="true" />
             <element signature="e#2833#2863#0#Perl5" expanded="true" />
             <element signature="e#3115#3158#0#Perl5" expanded="true" />
-            <element signature="e#3445#3500#0#Perl5" expanded="true" />
-            <element signature="e#3936#3991#0#Perl5" expanded="true" />
-            <element signature="e#5294#5322#0#Perl5" expanded="true" />
+            <element signature="e#3684#3739#0#Perl5" expanded="true" />
+            <element signature="e#4175#4230#0#Perl5" expanded="true" />
+            <element signature="e#5533#5561#0#Perl5" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1025,7 +1317,6 @@
           <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
           <folding>
             <element signature="e#58#75#0#Perl5" expanded="true" />
-            <element signature="e#657#685#0#Perl5" expanded="true" />
             <element signature="e#2131#2136#0#Perl5" expanded="true" />
           </folding>
         </state>
@@ -1064,14 +1355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gui.pm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/share/perl5/find.pl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1086,26 +1369,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/report.txt" />
+    <entry file="file://$PROJECT_DIR$/fic_1.html" />
+    <entry file="file://$PROJECT_DIR$/poc_d3js.html" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gui.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.pl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-429">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+          <folding>
+            <element signature="e#58#75#0#Perl5" expanded="true" />
+            <element signature="e#2131#2136#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_graph.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataEnv.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Querier.pm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2412">
-          <caret line="155" column="50" selection-start-line="155" selection-start-column="50" selection-end-line="155" selection-end-column="50" />
+        <state relative-caret-position="90">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="21" />
           <folding>
-            <element signature="e#58#70#0#Perl5" expanded="true" />
             <element signature="e#1418#1468#0#Perl5" expanded="true" />
             <element signature="e#2090#2126#0#Perl5" expanded="true" />
             <element signature="e#2833#2863#0#Perl5" expanded="true" />
             <element signature="e#3115#3158#0#Perl5" expanded="true" />
-            <element signature="e#3445#3500#0#Perl5" expanded="true" />
-            <element signature="e#3936#3991#0#Perl5" expanded="true" />
-            <element signature="e#5294#5322#0#Perl5" expanded="true" />
+            <element signature="e#3684#3739#0#Perl5" expanded="true" />
+            <element signature="e#4175#4230#0#Perl5" expanded="true" />
+            <element signature="e#5533#5561#0#Perl5" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Product.pm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1530">
+        <state relative-caret-position="597">
           <caret line="98" column="2" selection-start-line="98" selection-start-column="2" selection-end-line="98" selection-end-column="2" />
           <folding>
             <element signature="e#176#219#0#Perl5" expanded="true" />
@@ -1119,71 +1449,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/report.txt">
+    <entry file="file://$USER_HOME$/perl5/lib/perl5/x86_64-linux-gnu-thread-multi/Math/Random.pm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.pl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-          <folding>
-            <element signature="e#58#75#0#Perl5" expanded="true" />
-            <element signature="e#657#685#0#Perl5" expanded="true" />
-            <element signature="e#2131#2136#0#Perl5" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fic_1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="44" selection-start-line="0" selection-start-column="44" selection-end-line="0" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_graph.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataEnv.pm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state relative-caret-position="18">
+          <caret line="300" column="4" selection-start-line="300" selection-start-column="4" selection-end-line="300" selection-end-column="4" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Graph.pm">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="92" column="24" selection-start-line="92" selection-start-column="24" selection-end-line="92" selection-end-column="24" />
+        <state relative-caret-position="306">
+          <caret line="146" column="29" selection-start-line="146" selection-start-column="29" selection-end-line="146" selection-end-column="29" />
           <folding>
-            <element signature="e#57#77#0#Perl5" expanded="true" />
-            <element signature="e#139#1484#0#Perl5" expanded="false" />
-            <element signature="e#596#643#0#Perl5" expanded="true" />
-            <element signature="e#1036#1088#0#Perl5" expanded="true" />
-            <element signature="e#5168#6016#0#Perl5" expanded="false" />
-            <element signature="e#5385#5444#0#Perl5" expanded="true" />
+            <element signature="e#88#108#0#Perl5" expanded="true" />
+            <element signature="e#627#674#0#Perl5" expanded="true" />
+            <element signature="e#1067#1119#0#Perl5" expanded="true" />
+            <element signature="e#4759#4801#0#Perl5" expanded="true" />
+            <element signature="e#5519#5560#0#Perl5" expanded="true" />
+            <element signature="e#6159#6203#0#Perl5" expanded="true" />
+            <element signature="e#6545#6656#0#Perl5" expanded="true" />
+            <element signature="e#22102#22161#0#Perl5" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PointRepartition.pm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="381">
+          <caret line="44" column="17" selection-start-line="44" selection-start-column="17" selection-end-line="44" selection-end-column="17" />
+          <folding>
+            <element signature="e#67#93#0#Perl5" expanded="true" />
+            <element signature="e#133#204#0#Perl5" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/poc_d3js_3017620429484.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="199" column="36" selection-start-line="199" selection-start-column="36" selection-end-line="199" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -105,10 +105,16 @@ sub fetch {
         #    my $perl_scalar = decode_json $cursor;
         #    #    my $json = encode_json \$cursor;
         #    print "$perl_scalar \n";
+        # todo : remove counter below (used just to reduce the nb of items match and debugging purposes)
+        my $_tmp_max = 3;
+        my $_tmp_cpt=0;
         while ( my $product = $result->next ) {
             my $temp = $product;
             my $objProduct = new Product( $temp );
-            push ( @products_fetched, $objProduct );
+            if ($_tmp_cpt < $_tmp_max) {
+                push ( @products_fetched, $objProduct );
+            }
+            $_tmp_cpt++;
             #            print "printing the product details : \n";
             #            my $code = $product->{"code"};
             #            print $code, "\n";
