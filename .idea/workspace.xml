@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7f739fd6-1e38-4fd1-b3cd-ca657469427b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Graph.pm" afterPath="$PROJECT_DIR$/Graph.pm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Querier.pm" afterPath="$PROJECT_DIR$/Querier.pm" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_graph.html" afterPath="$PROJECT_DIR$/_graph.html" />
     </list>
     <ignored path="off.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -903,7 +899,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464547496028</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Debug phase : PointRepartition-&gt;new_positions_disc_coordinates()">
+      <created>1464807208094</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1464807208094</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -953,7 +956,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="clean-up" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean-up" />
+    <MESSAGE value="Debug phase : PointRepartition-&gt;new_positions_disc_coordinates()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Debug phase : PointRepartition-&gt;new_positions_disc_coordinates()" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
