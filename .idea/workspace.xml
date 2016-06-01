@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f739fd6-1e38-4fd1-b3cd-ca657469427b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/olivier.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PointRepartition.pm" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/poc_d3js_3017620429484.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="off.iws" />
@@ -906,7 +909,14 @@
       <option name="project" value="LOCAL" />
       <updated>1464807208094</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Debug phase : PointRepartition-&gt;new_positions_disc_coordinates()">
+      <created>1464807371627</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1464807371627</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
