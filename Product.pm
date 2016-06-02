@@ -40,7 +40,8 @@ sub set_as_reference {
     if ($is_ref eq 1) {
         $self->{score_proximity} = 1;
         # compute also the nutrition score
-        $self->calc_score_nutrition();
+        $self->{score_nutrition} = $self->calc_score_nutrition();
+        print "score nutrition ref = ", $self->calc_score_nutrition(), "\n";
     }
 }
 
@@ -65,12 +66,9 @@ sub calc_score_proximity {
     #  :param product_ref: object Product
     #  :return:
     my ( $self, $product_ref ) = @_;
-    my $dic_props = $self->{dic_props};
     # categories_tags is an Array
-    my $nb_categs_ref = scalar @{$dic_props->{"categories_tags"}};
-#    print "nb categories for product ref .. $nb_categs_ref", "\n";
+    my $nb_categs_ref = scalar @{$product_ref->{dic_props}->{categories_tags}};
     $self->{score_proximity} = $self->{nb_categories_intersect_with_ref} / $nb_categs_ref;
-#    print "score proximity is ", $self->{score_proximity}, "\n";
 }
 
 sub calc_score_nutrition {
@@ -79,7 +77,6 @@ sub calc_score_nutrition {
     my $dic_props = $self->{dic_props};
     # nutriments is a Hash
     my $nutriments = $dic_props->{"nutriments"};
-#    print $nutriments, "\n";
     if (!(exists( $nutriments->{"nutrition-score-uk"} ))) {
         # add security in case this is the product reference (we want it to be shown in the graph)
         if ($self->{isRef} == 1) {

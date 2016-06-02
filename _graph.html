@@ -1,10 +1,348 @@
-<!doctype html>
-<html class="no-js" lang="fr">
-<head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="http://static.openfoodfacts.org/foundation/css/app.css"/>
-    <link rel="stylesheet" href="http://static.openfoodfacts.org/foundation/foundation-icons/foundation-icons.css"/>
-    <title>3017620429484</title></head>
-<body><h3> Product #3017620429484</h3></body>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="iso-8859-1">
+    <style> /* set the CSS */
+      body {
+        font: 11px Arial;
+      }
+
+      .axis path,
+      .axis line {
+        fill: none;
+        stroke: grey;
+        stroke-width: 2;
+        shape-rendering: crispEdges;
+      }
+      div.tooltip {
+        position: absolute;
+        text-align: center;
+        width: 120px;
+        height: 120px;
+        padding: 2px;
+        font: 10px sans-serif;
+        background: lightsteelblue;
+        border: 0;
+        border-radius: 8px;
+        pointer-events: none;
+      }
+    </style>
+  </head>
+  <body>
+<div style='text-align: center'>
+<h2>Your selected product : Pâtes à tartiner aux noisettes et au cacao [3017620429484]</h2>
+</div>
+    <!-- load the d3.js library -->
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script>
+    // Set the dimensions of the canvas / graph
+    var margin = {top: 30, right: 30, bottom: 60, left: 50},
+         width = 1000 - margin.left - margin.right,
+        height = 600 - margin.top - margin.bottom;
+    var x = d3.scale.linear().range([0, width]);
+    var y = d3.scale.linear().range([height, 0]);
+    var nb_categs = 7;
+    var nb_nutrition_grades = 5;
+    // Define the axes
+    var xAxis = d3.svg.axis().scale(x)
+            .orient("bottom").ticks(nb_categs)
+            .tickFormat(function (d) {
+                if (d == 0)
+                    return "very low";
+                if (d == 1)
+                    return "very high";
+                return "";
+            });
+    var yAxis = d3.svg.axis().scale(y)
+            .orient("left")
+            .ticks(nb_nutrition_grades)
+            .tickFormat(function (d) {
+                if (d == 1)
+                    return "E";
+                if (d == 2)
+                    return "D";
+                if (d == 3)
+                    return "C";
+                if (d == 4)
+                    return "B";
+                if (d == 5)
+                    return "A";
+                return "";
+            });
+
+    // Define the div for the tooltip
+    var div = d3.select("body").append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0);
+
+    // Adds the svg canvas
+    var svg = d3.select("body")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform",
+            "translate(" + margin.left + "," + margin.top + ")");
+    // taken from my Python project as d3_json object
+    // Scale the range of the data
+    x.domain([0, 1]);
+    y.domain([0, nb_nutrition_grades]);
+    var data_rect = [{'v': 1, 'color': 'rgb(240,0,0)'},
+                     {'v': 2, 'color': 'rgb(255,1,128)'},
+                     {'v': 3, 'color': 'rgb(255,103,1)'},
+                     {'v': 4, 'color': 'rgb(255,242,0)'},
+                     {'v': 5, 'color': 'rgb(0,255,0)'}];
+    svg.selectAll("rect")
+         .data(data_rect)
+       .enter()
+         .append("rect")
+         .attr("width", width)
+         .attr("height", height / 5)
+         .attr("y", function (d) {
+           return (5 - d.v) * height / 5
+         })
+         .attr("fill", function (d) {
+           return d.color
+         })
+         .attr("fill-opacity", .5);
+    // Add the scatterplot
+    // .. for the product reference
+    var data_prod_ref = [{'nutrition_grade': 1}];
+    svg.selectAll("ellipse")
+         .data( data_prod_ref )
+       .enter().append("ellipse")
+         .attr("cx", width * (1 - (1 / nb_categs) / 2))
+         .attr("cy", function (d) {
+           return (height * (1 - (d.nutrition_grade / nb_nutrition_grades)) + (height / nb_nutrition_grades * 0.5));
+         })
+         .attr("rx", width / nb_categs * 0.5)
+         .attr("ry", (height / nb_nutrition_grades) * 0.5)
+         .attr("fill", "#ffffff")
+         .attr("fill-opacity", 0.75);
+    // .. for all matching products
+    var data_others = [
+{'y': 4.31245373817287, 'x': 0.0156145533178514, 'content': "<div style = 'background-color: #ffffff'><br/>u/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3256221407242'}, 
+{'y': 0.264295853309048, 'x': 0.464539930219612, 'content': "<div style = 'background-color: #ffffff'><br/>pur-bonheur/confiserie-pinson/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3470201011278'}, 
+{'y': 3.26236691391555, 'x': 0.0163365972486569, 'content': "<div style = 'background-color: #ffffff'>Muesli raisins noisettes Bio<br/>carrefour/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3560070519033'}, 
+{'y': 4.62695799459053, 'x': 0.0761497470281558, 'content': "<div style = 'background-color: #ffffff'>Muesli floconneux 5 céréales nature Bio<br/>carrefour/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3560070519309'}, 
+{'y': 2.10963351303516, 'x': 0.0480582743448772, 'content': "<div style = 'background-color: #ffffff'><br/>chabrior/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3250390729341'}, 
+{'y': 2.46126350670382, 'x': 0.141626449700026, 'content': "<div style = 'background-color: #ffffff'>Pétales de blé au chocolat riches en vitamines B3, B5, B2, B6, B1, B9, B8, B12 et en fer<br/>monoprix/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3350033138759'}, 
+{'y': 2.45603619985861, 'x': 0.051445341716694, 'content': "<div style = 'background-color: #ffffff'><br/>kellogg-s/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/5050083499586'}, 
+{'y': 1.62855570535092, 'x': 0.292204599284986, 'content': "<div style = 'background-color: #ffffff'>Marmelade d'orange de Dundee<br/>mackdays/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/0637793002500'}, 
+{'y': 0.260284056506262, 'x': 0.614537493015417, 'content': "<div style = 'background-color: #ffffff'>Nuss-Nougat-Creme<br/>k-classic/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4300175163798'}, 
+{'y': 3.49715750829755, 'x': 0.357435518519884, 'content': "<div style = 'background-color: #ffffff'>confiture de rhubarbe<br/>sandrine/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/32760217400341'}, 
+{'y': 2.52556828479086, 'x': 0.096001747414209, 'content': "<div style = 'background-color: #ffffff'><br/>kellogg-s/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/5053827109253'}, 
+{'y': 1.11019692152899, 'x': 0.108790364298104, 'content': "<div style = 'background-color: #ffffff'><br/>dr-oetker/vitalis/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4000521004569'}, 
+{'y': 4.18867534812397, 'x': 0.0752288866972071, 'content': "<div style = 'background-color: #ffffff'>Caffé latte flavour breakfast milk drink<br/>fuel/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/5060201621850'}, 
+{'y': 1.32492267070344, 'x': 0.111842553827913, 'content': "<div style = 'background-color: #ffffff'>Kakaohaltiges Getränkepulver<br/>kaba/mondelez/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4000550304005'}, 
+{'y': 1.29056721417836, 'x': 0.0980576097697478, 'content': "<div style = 'background-color: #ffffff'>Kakaogetränkepulver<br/>nestle/nesquik/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/7613032388744'}, 
+{'y': 1.36222825556426, 'x': 0.0213202912848704, 'content': "<div style = 'background-color: #ffffff'>Kakaohaltiges Getränkepulver<br/>gut-gunstig/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4311501436714'}, 
+{'y': 1.70505718023074, 'x': 0.0603866249725552, 'content': "<div style = 'background-color: #ffffff'>Bio Schokoladenpulver<br/>alnatura/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4104420038462'}, 
+{'y': 1.39609481766775, 'x': 0.131118026166144, 'content': "<div style = 'background-color: #ffffff'>Knuspermüsli mit weißen Schokoladenröllchen und Himbeeren<br/>edeka/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4311501403006'}, 
+{'y': 2.95403981714604, 'x': 0.366072455645485, 'content': "<div style = 'background-color: #ffffff'><br/>original-grafschafter/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4000412045244'}, 
+{'y': 0.167125441430237, 'x': 0.316959653642446, 'content': "<div style = 'background-color: #ffffff'>Magermilch-Kakao-Creme, süßer Brotaufstrich<br/>penny/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/23009738'}, 
+{'y': 1.22862325810775, 'x': 0.305780899262443, 'content': "<div style = 'background-color: #ffffff'>Brotaufstrich auf Frischkäsebasis (45%) mit Alpenmilchschokolade (23%)<br/>philadelphia/milka/philadelphia-fantasie/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/7622300508661'}, 
+{'y': 2.51720278100729, 'x': 0.334557356218574, 'content': "<div style = 'background-color: #ffffff'>Aprikosen Fruchtaufstrich<br/>maribel/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/20270278'}, 
+{'y': 2.42497845939781, 'x': 0.369498014117059, 'content': "<div style = 'background-color: #ffffff'>Schwarzkirsch Fruchtaufstrich<br/>maribel/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/20270285'}, 
+{'y': 0.3747144585802, 'x': 0.664024987573267, 'content': "<div style = 'background-color: #ffffff'>Nuss-Nugat-Creme<br/>nutella/ferrero/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4008400401621'}, 
+{'y': 3.37744252083015, 'x': 0.373872891283452, 'content': "<div style = 'background-color: #ffffff'>Fruchtaufstrich aus erlesenen Bio-Früchten<br/>allos/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4016249282813'}, 
+{'y': 4.56831339938596, 'x': 0.0854503715546916, 'content': "<div style = 'background-color: #ffffff'>Muesli bio aux fruits<br/>joseph-favrichon/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3111900350243'}, 
+{'y': 1.30369516996014, 'x': 0.0638485499156814, 'content': "<div style = 'background-color: #ffffff'>Préparation en poudre instantanée pour boisson cacaotée<br/>nestle/nesquik/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3033710065967'}, 
+{'y': 0.355292616664364, 'x': 0.621875114525021, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner<br/>delinut/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/27029077'}, 
+{'y': 0.727069918569911, 'x': 0.119442333591743, 'content': "<div style = 'background-color: #ffffff'>Préparation en poudre pour boisson au lait cacaotée enrichie en vitamines et minéraux<br/>nesquik/nescafe/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/7613033162220'}, 
+{'y': 2.08747701368786, 'x': 0.081975588011343, 'content': "<div style = 'background-color: #ffffff'>Biscuits aux céréales avec un nappage (25%) à la fraise, enrichies en fer, magnésium et vitamines<br/>lu/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/7622300788155'}, 
+{'y': 1.70917998161224, 'x': 0.105796438623034, 'content': "<div style = 'background-color: #ffffff'>Mélange de céréales croustillantes avec des morceaux de chocolat noir et de noisettes, enrichi en vitamines (B1, B2, PP, B6, B9, B12) et en fer<br/>kellogg-s/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3159470005071'}, 
+{'y': 2.47518011691236, 'x': 0.0674542339288245, 'content': "<div style = 'background-color: #ffffff'><br/>kellogg-s/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/5053827140300'}, 
+{'y': 1.62226530215026, 'x': 0.336185355983966, 'content': "<div style = 'background-color: #ffffff'><br/>cora/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3257982272520'}, 
+{'y': 2.54924296732185, 'x': 0.067830063070099, 'content': "<div style = 'background-color: #ffffff'>Muesli croustillant cacao et noix de coco<br/>terres-et-cereales-bio/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3421557501883'}, 
+{'y': 2.29677010655888, 'x': 0.0716083997044557, 'content': "<div style = 'background-color: #ffffff'><br/>auchan/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3596710408306'}, 
+{'y': 1.17889436361863, 'x': 0.659525418780653, 'content': "<div style = 'background-color: #ffffff'>Nuss Nougat Creme<br/>nulacta/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/20089566'}, 
+{'y': 1.85955545385289, 'x': 0.0337606678986172, 'content': "<div style = 'background-color: #ffffff'>cereales<br/>nestle/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/7613031443338'}, 
+{'y': 3.21179527605922, 'x': 0.34898173302116, 'content': "<div style = 'background-color: #ffffff'>confiture<br/>sandrine/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3760217400259'}, 
+{'y': 1.6103005211271, 'x': 0.0173324214379791, 'content': "<div style = 'background-color: #ffffff'><br/>kellogg-s/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4003994152751'}, 
+{'y': 1.64028444877966, 'x': 0.138703825825278, 'content': "<div style = 'background-color: #ffffff'>Muesli<br/>carrefour-bio/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3560070519095'}, 
+{'y': 4.43285753546053, 'x': 0.0761729139384789, 'content': "<div style = 'background-color: #ffffff'><br/>celnat/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3273120019826'}, 
+{'y': 1.45663306400496, 'x': 0.371725805375635, 'content': "<div style = 'background-color: #ffffff'>Mélange de miels originaires et non originaires de l'Union Européenne<br/>bien-vu/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3660992055142'}, 
+{'y': 2.79443564249882, 'x': 0.0699268855166306, 'content': "<div style = 'background-color: #ffffff'>Biscuits petit déjeuner<br/>lu/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3017760619998'}, 
+{'y': 1.7057517068145, 'x': 0.337891767453434, 'content': "<div style = 'background-color: #ffffff'><br/>les-recettes-de-juliette/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3760058112243'}, 
+{'y': 0.339339201531611, 'x': 0.954044673837853, 'content': "<div style = 'background-color: #ffffff'>Pâtes à tartiner aux noisettes et au cacao<br/>nutella/ferrero/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/8000500082379'}, 
+{'y': 3.49022202556238, 'x': 0.220761996558579, 'content': "<div style = 'background-color: #ffffff'>Préparation de fruits Cassis - Pomme<br/>lucien-georgelin/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3330720251107'}, 
+{'y': 0.746746174766767, 'x': 0.765346691061344, 'content': "<div style = 'background-color: #ffffff'>Nutella<br/>ferrero/nutella/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3017620401473'}, 
+{'y': 1.57628630316953, 'x': 0.0778616102798058, 'content': "<div style = 'background-color: #ffffff'><br/>monoprix/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3350031757327'}, 
+{'y': 3.54072506825338, 'x': 0.10194850427326, 'content': "<div style = 'background-color: #ffffff'>Muesli<br/>biothentic/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/0227628013582'}, 
+{'y': 3.57868672428526, 'x': 0.0747437639427767, 'content': "<div style = 'background-color: #ffffff'>Muesli<br/>biothentic/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3760092219014'}, 
+{'y': 0.261805796817533, 'x': 0.0186137550397723, 'content': "<div style = 'background-color: #ffffff'>Süßrahmbutter 82% Fett<br/>meggle/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/40349558'}, 
+{'y': 0.481849509073422, 'x': 0.139804146239821, 'content': "<div style = 'background-color: #ffffff'><br/>auchan/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3596710404360'}, 
+{'y': 3.17790280116218, 'x': 0.115394015476951, 'content': "<div style = 'background-color: #ffffff'>Paté de champiñón y tofu ecológico<br/>carlota-organic/carlota/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/8437015940137'}, 
+{'y': 0.67344199205167, 'x': 0.0782893943721598, 'content': "<div style = 'background-color: #ffffff'><br/>monique-ranou/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3250390911005'}, 
+{'y': 3.48796235270996, 'x': 0.0728209104776198, 'content': "<div style = 'background-color: #ffffff'><br/>paysan-breton/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3412290011937'}, 
+{'y': 1.61478119099998, 'x': 0.0772142172711838, 'content': "<div style = 'background-color: #ffffff'>Butterzubereitung, Milchfettgehalt 65%<br/>meggle/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/40349480'}, 
+{'y': 0.601146664748497, 'x': 0.105857492826892, 'content': "<div style = 'background-color: #ffffff'>Mousse de canard au porto de qualité supérieure<br/>u/systeme-u/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3256220271554'}, 
+{'y': 0.464657926133348, 'x': 0.0845062013886962, 'content': "<div style = 'background-color: #ffffff'>Mousse de foie qualité supérieure<br/>monique-ranou/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3250390911036'}, 
+{'y': 0.665645496296509, 'x': 0.0612575196786862, 'content': "<div style = 'background-color: #ffffff'>Mousse de foie qualité supérieure<br/>monique-ranou/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3250390318026'}, 
+{'y': 1.52702916983427, 'x': 0.0796525060024667, 'content': "<div style = 'background-color: #ffffff'>Brotaufstrich Eiersalat<br/>feinkost-popp/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4045800402261'}, 
+{'y': 3.60948256736367, 'x': 0.0121653979125437, 'content': "<div style = 'background-color: #ffffff'><br/>alnatura/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4104420035782'}, 
+{'y': 1.54593131117677, 'x': 0.0904532204248257, 'content': "<div style = 'background-color: #ffffff'>Brotaufstrich Delikatess Fleischsalat<br/>feinkost-popp/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4045800213263'}, 
+{'y': 2.2036346016513, 'x': 0.0587296487872661, 'content': "<div style = 'background-color: #ffffff'>Vegetarischer Gourmet-Aufstrich mit Tomaten und Sojaeiweiß<br/>bio/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/22144492'}, 
+{'y': 1.47811545901106, 'x': 0.0665132776198864, 'content': "<div style = 'background-color: #ffffff'>Brotaufstrich Alaska-Seelachs<br/>feinkost-popp/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4045800522266'}, 
+{'y': 3.9108270925487, 'x': 0.0319423792138818, 'content': "<div style = 'background-color: #ffffff'>Vegetarischer Brotaufstrich<br/>allos/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4016249012175'}, 
+{'y': 3.34313184511768, 'x': 0.032630775117291, 'content': "<div style = 'background-color: #ffffff'>Beurre moulé doux<br/>paysan-breton/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3412290015980'}, 
+{'y': 0.418755414183082, 'x': 0.0524253929804881, 'content': "<div style = 'background-color: #ffffff'>Pâté de foie<br/>top-budget/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3410280019482'}, 
+{'y': 1.44062693178942, 'x': 0.0703651702786112, 'content': "<div style = 'background-color: #ffffff'>Streichfett 28% mit frischem Joghurtgeschmack<br/>deli/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/40264295'}, 
+{'y': 1.40823743655877, 'x': 0.0364127051550104, 'content': "<div style = 'background-color: #ffffff'><br/>u-mat-lou/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3256225230723'}, 
+{'y': 0.123353018372749, 'x': 0.107330661045825, 'content': "<div style = 'background-color: #ffffff'>Fromage industriel de France, à pâte fondue, au lait de vache, à tartiner<br/>la-vache-qui-rit/bel/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3073780593083'}, 
+{'y': 0.100319630844343, 'x': 0.0984725943271733, 'content': "<div style = 'background-color: #ffffff'><br/>grand-jury/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3245393340259'}, 
+{'y': 3.4555110214887, 'x': 0.0996075750457562, 'content': "<div style = 'background-color: #ffffff'><br/>paysan-breton/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3412290015997'}, 
+{'y': 3.71898571659751, 'x': 0.127731640294019, 'content': "<div style = 'background-color: #ffffff'>Fromage industriel de France, à pâte fraîche, au lait pasteurisé de vache, à tartiner<br/>paysan-breton/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3236240070139'}, 
+{'y': 0.985607022427856, 'x': 0.0600978353174069, 'content': "<div style = 'background-color: #ffffff'>Mousse de canard au Porto de qualité supérieure<br/>casino/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3222472272434'}, 
+{'y': 3.38593495760097, 'x': 0.0562035414530769, 'content': "<div style = 'background-color: #ffffff'><br/>maayane/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3700029201910'}, 
+{'y': 1.66929621577725, 'x': 0.0355115681449368, 'content': "<div style = 'background-color: #ffffff'><br/>savino/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3580281780039'}, 
+{'y': 0.294588073817388, 'x': 0.0498646849136587, 'content': "<div style = 'background-color: #ffffff'>Mousse de foie supérieure à l'ancienne<br/>epicurillades/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/26014050'}, 
+{'y': 0.509104091557251, 'x': 0.0701375821804535, 'content': "<div style = 'background-color: #ffffff'>Beurre pasteurisé demi-sel 80 % de matière grasse<br/>u/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3256224303015'}, 
+{'y': 0.521725734522243, 'x': 0.0299556537990344, 'content': "<div style = 'background-color: #ffffff'>Beurre doux<br/>les-croises/marque-repere/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3564700014516'}, 
+{'y': 0.752449794224358, 'x': 0.104059281859601, 'content': "<div style = 'background-color: #ffffff'>Pâte dé campagne<br/>top-budget/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3410280019505'}, 
+{'y': 0.288790491426646, 'x': 0.0601516916281765, 'content': "<div style = 'background-color: #ffffff'>Mousse de canard au Porto<br/>top-budget/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3410280033754'}, 
+{'y': 0.459576462995318, 'x': 0.0564051669547286, 'content': "<div style = 'background-color: #ffffff'>Mousse de foie - pâté de qualité supérieure<br/>auchan/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3596710191567'}, 
+{'y': 2.31414733045657, 'x': 0.0545772066822786, 'content': "<div style = 'background-color: #ffffff'><br/>eric-bur/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3144550006062'}, 
+{'y': 1.41507695433452, 'x': 0.10529190950049, 'content': "<div style = 'background-color: #ffffff'><br/>eric-bur/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3144550006123'}, 
+{'y': 1.46800844128332, 'x': 0.139466540986648, 'content': "<div style = 'background-color: #ffffff'><br/>eric-bur/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3144550006222'}, 
+{'y': 1.79485938055328, 'x': 0.103277881674825, 'content': "<div style = 'background-color: #ffffff'><br/>eric-bur/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3144550006239'}, 
+{'y': 1.75401553900043, 'x': 0.0615242888085904, 'content': "<div style = 'background-color: #ffffff'><br/>les-recettes-de-juliette/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3760058112229'}, 
+{'y': 1.50406439287076, 'x': 0.629283245897066, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner aux noisettes et au cacao maigre<br/>auchan/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3596710427734'}, 
+{'y': 3.46154412262101, 'x': 0.110436457480002, 'content': "<div style = 'background-color: #ffffff'><br/>les-apiculteurs-associes/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3520051001223'}, 
+{'y': 3.66269228676726, 'x': 0.113996593800222, 'content': "<div style = 'background-color: #ffffff'><br/>miel-du-morvan/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3410910000132'}, 
+{'y': 3.5422953443353, 'x': 0.0654289208461192, 'content': "<div style = 'background-color: #ffffff'><br/>sans-marque/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/20343989'}, 
+{'y': 2.47347774017887, 'x': 0.0807146087548657, 'content': "<div style = 'background-color: #ffffff'>Confiture<br/>jardin-bio/lea-nature/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3478824000631'}, 
+{'y': 0.514451546926747, 'x': 0.670533748979733, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner aux noisettes et au cacao<br/>nutella/ferrero/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3017620424403'}, 
+{'y': 3.67648800311092, 'x': 0.0623315511503252, 'content': "<div style = 'background-color: #ffffff'><br/>reflets-de-france/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3560070576906'}, 
+{'y': 2.3763124220476, 'x': 0.0609934396098423, 'content': "<div style = 'background-color: #ffffff'>Kiwi Fruchtaufstrich<br/>zentis/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4002575292596'}, 
+{'y': 2.49541262350134, 'x': 0.0801510480303204, 'content': "<div style = 'background-color: #ffffff'><br/>vivis/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3229820792026'}, 
+{'y': 3.46351717213279, 'x': 0.0371733559744981, 'content': "<div style = 'background-color: #ffffff'>Spécialité biologique à teneur réduite en glucides<br/>confiturelle/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3452200002617'}, 
+{'y': 2.14634877188277, 'x': 0.0361689397918443, 'content': "<div style = 'background-color: #ffffff'>Préparation de cerises <br/>zuegg/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/80298366'}, 
+{'y': 3.37928738025463, 'x': 0.0575233402397493, 'content': "<div style = 'background-color: #ffffff'><br/>lucien-georgelin/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3330720251473'}, 
+{'y': 3.25641679337326, 'x': 0.112787362507987, 'content': "<div style = 'background-color: #ffffff'>Préparation de fruits Fraise Pommes<br/>lucien-georgelin/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3330720258090'}, 
+{'y': 0.597499977780906, 'x': 0.36620914160719, 'content': "<div style = 'background-color: #ffffff'>Nuss-Nougat-Creme<br/>choco-nussa/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/20003548'}, 
+{'y': 0.453613730984152, 'x': 0.366713072419077, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner cacaotée<br/>nestle/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3155250366219'}, 
+{'y': 1.50696655597469, 'x': 0.642601237607028, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner au cacao et noisettes<br/>rigoni-di-asiago/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/8001505003529'}, 
+{'y': 2.12007305045145, 'x': 0.0337578676961527, 'content': "<div style = 'background-color: #ffffff'>confiture de coing<br/>amanhecer/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/5601227016239'}, 
+{'y': 1.50864519594509, 'x': 0.0709700180042824, 'content': "<div style = 'background-color: #ffffff'>Confiture de pêche de vigne<br/>eric-fur/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3144550008455'}, 
+{'y': 2.7871616086235, 'x': 0.0871118757719563, 'content': "<div style = 'background-color: #ffffff'><br/>regain/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3250390134701'}, 
+{'y': 1.36923719941244, 'x': 0.0896898980158428, 'content': "<div style = 'background-color: #ffffff'>Marmelade Citrons<br/>bonne-maman/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3608580000471'}, 
+{'y': 0.687416258627086, 'x': 0.621557597586701, 'content': "<div style = 'background-color: #ffffff'>Hazelnut spread with skim milk & cacao<br/>nutella/ferrero/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/0009800895250'}, 
+{'y': 3.93575647040794, 'x': 0.105960181075475, 'content': "<div style = 'background-color: #ffffff'><br/>lune-de-miel/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3088540258256'}, 
+{'y': 1.33065174022207, 'x': 0.0474431070558849, 'content': "<div style = 'background-color: #ffffff'>Gelée en poudre<br/>maggi/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/7613031886968'}, 
+{'y': 1.35857947366542, 'x': 0.0803776725130152, 'content': "<div style = 'background-color: #ffffff'><br/>best-of/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/5400247054531'}, 
+{'y': 0.508860725981387, 'x': 0.467361410096061, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner<br/>bonneterre/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3396411222146'}, 
+{'y': 0.753684418587869, 'x': 0.0674939641113047, 'content': "<div style = 'background-color: #ffffff'><br/>lotus/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/5410126006957'}, 
+{'y': 0.402977559587171, 'x': 0.510167576219216, 'content': "<div style = 'background-color: #ffffff'><br/>ferrero/nutella/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/80050865'}, 
+{'y': 1.80262257828526, 'x': 0.44929955452721, 'content': "<div style = 'background-color: #ffffff'><br/>rigoni-di-asiago/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/8001505005592'}, 
+{'y': 4.42653533012679, 'x': 0.462961436408615, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner aux noisettes avec édulcorants à valeur énergétique réduite (-54%) sans sucres ajoutés<br/>gerble/glucoregul/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3175681105393'}, 
+{'y': 0.982605777099628, 'x': 0.203935107188151, 'content': "<div style = 'background-color: #ffffff'>Nuss-Nougat-Creme<br/>ja/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/42229032'}, 
+{'y': 0.600587933644007, 'x': 0.557542376267378, 'content': "<div style = 'background-color: #ffffff'>Hazelnut spread with cocoa<br/>ferrero/nutella/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/80176800'}, 
+{'y': 0.912171983766058, 'x': 0.528809995436559, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner aux noisettes et au cacao<br/>ferrero/nutella/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3017624044003'}, 
+{'y': 0.392773760144187, 'x': 0.502385632767211, 'content': "<div style = 'background-color: #ffffff'>Hazelnut Spread with Skim Milk & Cocoa<br/>nutella/ferrero/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/0009800801107'}, 
+{'y': 3.3769447216519, 'x': 0.522732628543482, 'content': "<div style = 'background-color: #ffffff'>Hazelnut spread with skim milk & cocoa<br/>ferrero/nutella/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/00988639'}, 
+{'y': 0.0535848708389433, 'x': 0.507171266467269, 'content': "<div style = 'background-color: #ffffff'><br/>ferrero/nutella/nutella-go/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/80050100'}, 
+{'y': 0.538014863051736, 'x': 0.500084897970134, 'content': "<div style = 'background-color: #ffffff'>Nuss-Nugat-Creme<br/>nutella/ferrero/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4008400401928'}, 
+{'y': 0.563143145807078, 'x': 0.494573579076783, 'content': "<div style = 'background-color: #ffffff'>Nuss-Nugat-Creme<br/>nutella/ferrero/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/80751151'}, 
+{'y': 0.624984887758698, 'x': 0.47158351625585, 'content': "<div style = 'background-color: #ffffff'>Nuss-Nugat-Creme<br/>nutella/ferrero/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4008400401829'}, 
+{'y': 0.488833064458359, 'x': 0.478094507071033, 'content': "<div style = 'background-color: #ffffff'>Nuss-Nugat-Creme<br/>nutella/ferrero/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4008400401225'}, 
+{'y': 0.501490095632674, 'x': 0.499642852669476, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner aux noisettes<br/>ferrero/nutella/nutella-go/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/8000500045497'}, 
+{'y': 0.471943665001338, 'x': 0.519729711463439, 'content': "<div style = 'background-color: #ffffff'>Pâtes à tartiner aux noisettes<br/>nutella/ferrero/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3017620428401'}, 
+{'y': 3.4606328350537, 'x': 0.523088165663047, 'content': "<div style = 'background-color: #ffffff'>Nutella<br/>ferrero/nutella/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/80050698'}, 
+{'y': 0.127265943205785, 'x': 0.524023840323491, 'content': "<div style = 'background-color: #ffffff'>Pâte chocolatée à tartiner<br/>ferrero/nutella/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/80051428'}, 
+{'y': 0.0501561243838526, 'x': 0.478694104446511, 'content': "<div style = 'background-color: #ffffff'>hazelnut spread with cocoa<br/>ferrero/nutella/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/0009800895007'}, 
+{'y': 0.905019535472489, 'x': 0.509597458200134, 'content': "<div style = 'background-color: #ffffff'><br/>ferrero/nutella/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3017620428005'}, 
+{'y': 0.655224957712848, 'x': 0.546261443911328, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner aux noisettes<br/>ferrero/nutella/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/80052036'}, 
+{'y': 1.47177141376857, 'x': 0.0738539005650075, 'content': "<div style = 'background-color: #ffffff'>Confiture de gingembre extra<br/>chivers/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/5098732000660'}, 
+{'y': 0.577857980460302, 'x': 0.500773909188303, 'content': "<div style = 'background-color: #ffffff'><br/>ivoria/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3250391660995'}, 
+{'y': 0.156415965661151, 'x': 0.203470277378909, 'content': "<div style = 'background-color: #ffffff'>Nuss-Nougat-Creme mit 13% Haselnüssen<br/>penny/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/22954725'}, 
+{'y': 2.53145373072477, 'x': 0.0662002599769691, 'content': "<div style = 'background-color: #ffffff'>Puré de noisettes bio de Sicile<br/>damiano/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/8002352304005'}, 
+{'y': 1.69970979959924, 'x': 0.504148181921167, 'content': "<div style = 'background-color: #ffffff'><br/>auchan/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3596710422890'}, 
+{'y': 0.497365337241128, 'x': 0.498674770407521, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner aux noisette et au lait<br/>netto/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3250390860563'}, 
+{'y': 3.50911496561664, 'x': 0.0813930689095599, 'content': "<div style = 'background-color: #ffffff'><br/>sans-marque/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3760072742976'}, 
+{'y': 0.554962957280853, 'x': 0.242993120811295, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner au goût de chocolat aux éclats de caramel<br/>ikea/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/1602501330007'}, 
+{'y': 1.69388128681573, 'x': 0.543746811250177, 'content': "<div style = 'background-color: #ffffff'><br/>perl-amande/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3267110002707'}, 
+{'y': 0.064506405610532, 'x': 0.217061296261508, 'content': "<div style = 'background-color: #ffffff'>Nuss-Nougat-Creme<br/>zentis/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4002575010442'}, 
+{'y': 1.39164422830913, 'x': 0.0536332063407704, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner aux noisettes sans huile de palme<br/>winsenia/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4002309006611'}, 
+{'y': 0.940707911184532, 'x': 0.486791995853119, 'content': "<div style = 'background-color: #ffffff'>Véritable pâte à tartiner Bio sans huile de palme, sans gluten chocolat au lait - Noisettes Caramel & sel<br/>biocoop/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3501940002309'}, 
+{'y': 0.510074033120236, 'x': 0.499693937386118, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner<br/>bovetti/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3501940368009'}, 
+{'y': 0.359505164314318, 'x': 0.486083592169424, 'content': "<div style = 'background-color: #ffffff'><br/>tartichoc/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/26029115'}, 
+{'y': 1.30295330546908, 'x': 0.332415801850396, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner aux noisettes et au cacao bio<br/>mamie-bio/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3700477609504'}, 
+{'y': 0.316644171359882, 'x': 0.127644009450773, 'content': "<div style = 'background-color: #ffffff'>Nuss-Nougat-Creme<br/>nudossi/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4018087001755'}, 
+{'y': 1.35887502868939, 'x': 0.335249232795178, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner aux noisettes<br/>cora/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3257984362861'}, 
+{'y': 1.44680266902492, 'x': 0.0406037843684793, 'content': "<div style = 'background-color: #ffffff'>Nuss-Nougat Creme<br/>nussetti/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4316268389792'}, 
+{'y': 1.46909806609005, 'x': 0.357400609852296, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner au chocolat, noisettes et caramel au beurre salé<br/>nutabreizh/terre-et-soleil/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3760074419890'}, 
+{'y': 0.37097748199932, 'x': 0.34919133395792, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner aux noisettes et au cacao<br/>nutella/ferrero/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/80135463'}, 
+{'y': 0.394613594814809, 'x': 0.0331903829816783, 'content': "<div style = 'background-color: #ffffff'><br/>zentis/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/4002575012743'}, 
+{'y': 0.62200050624095, 'x': 0.145097159935242, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner aux noisettes et au cacao<br/>nutella/ferrero/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3017624047813'}, 
+{'y': 3.16388806672192, 'x': 0.219185566108413, 'content': "<div style = 'background-color: #ffffff'>Crema de cacao y avellanas con soja<br/>valsoia/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/80444916'}, 
+{'y': 1.74497858664362, 'x': 0.199989290858868, 'content': "<div style = 'background-color: #ffffff'>pate à tartiner choco noir noisettes<br/>u-saveurs/u/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3368959012510'}, 
+{'y': 0.593377344206304, 'x': 0.220033208601998, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner<br/>everyday/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/5400141104493'}, 
+{'y': 3.23068728931125, 'x': 0.179144434310275, 'content': "<div style = 'background-color: #ffffff'>Crema de cacao y avellanas<br/>belbake/propiedad-de/lidl-stiftung-co-kg/perteneciente-a/schwarz-beteiligungs-gmbh/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/20500603'}, 
+{'y': 0.248212530351725, 'x': 0.242740406816786, 'content': "<div style = 'background-color: #ffffff'><br/>nature-bio/cora/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3257982272544'}, 
+{'y': 0.50667412717284, 'x': 0.214258807479988, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner aux noisettes et au lait écrémé<br/>auchan/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3596710403721'}, 
+{'y': 3.53699390024481, 'x': 0.203386765184096, 'content': "<div style = 'background-color: #ffffff'><br/>natura-nostra/damiano/natura-nostra-damiano/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/8002352400004'}, 
+{'y': 3.67635625950116, 'x': 0.0581083780809086, 'content': "<div style = 'background-color: #ffffff'><br/>jean-herve/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3390390000313'}, 
+{'y': 1.50834284219206, 'x': 0.266333402414377, 'content': "<div style = 'background-color: #ffffff'><br/>jardin-bio/lea-nature/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3478820023184'}, 
+{'y': 0.890514033754467, 'x': 0.238496785848822, 'content': "<div style = 'background-color: #ffffff'>pâte à tartiner aux noisettes<br/>marque-repere/nustikao/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3564700022153'}, 
+{'y': 1.73368863307693, 'x': 0.041247261116628, 'content': "<div style = 'background-color: #ffffff'>Pâte à tartiner aux noisettes<br/>dia/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/8480017627704'}, 
+{'y': 3.61199853970056, 'x': 0.0637816307874492, 'content': "<div style = 'background-color: #ffffff'><br/>chokenut/<br/><img src='http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg' height = '125px' /><br/></div>", 'url': 'http://fr.openfoodfacts.org/produit/3760076001611'}];
+    svg.selectAll("circle")
+         .data(data_others)
+       .enter().append("circle")
+         .attr("r", 3)
+         .attr("stroke", "#000080")
+         .attr("stroke-width", 1)
+         .attr("fill", "steelblue")
+         .attr("cx", function (d) { 
+           return d.x * width;
+         })
+         .attr("cy", function (d) {
+           return height * (1 - d.y / nb_nutrition_grades);
+         })
+         .on("mouseover", function (d) {
+           div.transition()
+              .duration(200)
+              .style("opacity", .85);
+           div.html(d.content)
+              .style("left", (d3.event.pageX) + "px")
+              .style("top", (d3.event.pageY - 28) + "px");
+            })
+            .on("mouseout", function (d) {
+              div.transition()
+                 .duration(500)
+                 .style("opacity", 0);
+            })
+            .on("click", function (d) {
+              window.open(d.url);
+            });
+    // Add the X Axis
+    svg.append("g")
+       .attr("class", "x axis")
+       .attr("transform", "translate(0," + height + ")")
+       .call(xAxis);
+    // Add the X-axis label
+    svg.append("text")
+       .attr("x", width * 0.5)
+       .attr("y", height + 30)
+       .attr("dy", "1em")
+       .style("text-anchor", "middle")
+       .style("font-size", "14pt")
+       .text("Similarity with product reference");
+    // Add the Y Axis
+    svg.append("g")
+       .attr("class", "y axis")
+       .call(yAxis);
+    // Add the Y-axis label
+    svg.append("text")
+       .attr("transform", "rotate(-90)")
+       .attr("x", -(height * 0.5))
+       .attr("y", -45)
+       .attr("dy", "1em")
+       .style("text-anchor", "middle")
+       .style("font-size", "14pt")
+       .text("Nutrition grade");
+    </script>
+  </body>
 </html>

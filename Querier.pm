@@ -36,7 +36,7 @@ sub connect {
     if ($verbose == 1) {
         print ".. connecting to OPENFOODFACTS database and getting PRODUCTS collection\n";
     }
-    my $coll_products = $self->{_pongo}->ns( 'off-fr.products' ); # database off-fr, collection products
+    my $coll_products = $self->{_pongo}->MongoDB::MongoClient::ns( 'off-fr.products' ); # database off-fr, collection products
     my $nb_prods = $coll_products->find()->count();
     if ($verbose == 1) {
         print "${nb_prods} products are referenced\n";
@@ -51,7 +51,7 @@ sub disconnect {
     if ($verbose == 1) {
         print ".. closing connection\n";
     }
-    $self->{_pongo}->disconnect();
+    $self->{_pongo}->MongoDB::MongoClient::disconnect();
     if ($verbose == 1) {
         print "done.\n";
     }
@@ -92,7 +92,7 @@ sub fetch {
     my $pongo = $self->{_pongo};
     # todo: add fields_projection to retrieve just the required fields from the MongoDB
     #    my $cursor = $pongo->ns( 'off-fr.products' )->find( { $prop => $val }, %fields_projection );
-    my $cursor = $pongo->ns( 'off-fr.products' )->find( { $prop => $val } );
+    my $cursor = $pongo->MongoDB::MongoClient::ns( 'off-fr.products' )->find( { $prop => $val } );
     #    print %fields_projection;
     #    print "RESULT \n";
     # ******
@@ -106,11 +106,11 @@ sub fetch {
         #    #    my $json = encode_json \$cursor;
         #    print "$perl_scalar \n";
         # todo : remove counter below (used just to reduce the nb of items match and debugging purposes)
-        my $_tmp_max = 3;
+        my $_tmp_max = 50;
         my $_tmp_cpt=0;
         while ( my $product = $result->next ) {
             my $temp = $product;
-            my $objProduct = new Product( $temp );
+            my $objProduct = Product->new( $temp );
             if ($_tmp_cpt < $_tmp_max) {
                 push ( @products_fetched, $objProduct );
             }
@@ -140,9 +140,8 @@ sub find_match {
     my $matching_products = ();
 
     my $tmp_matching_products = { };  # dictionary in order to avoid duplicates
-    my $_id_prod_ref = $a_product->get_id();
+    my $_id_prod_ref = $a_product->Product::get_id();
     foreach my $criterium ($properties_to_match) {
-        print "my criterium = $criterium", "\n";
         my @tmp_array = @{$dic_props->{$criterium}};
         foreach my $crit_value (@tmp_array) {
 #            my $crit_value = @{$dic_props->{$criterium}}[$crit_key];
@@ -154,14 +153,14 @@ sub find_match {
             foreach my $prod (@prods) {
                 # $prod is an object Product
                 # removing identity product / add product
-                my $_id_prod = $prod->get_id();
+                my $_id_prod = $prod->Product::get_id();
                 if ($_id_prod != $_id_prod_ref) {
                     if (!(exists($tmp_matching_products->{$_id_prod}))) {
                         $tmp_matching_products->{$_id_prod} = $prod;
                         # Add the Product to the returned array (easier to deal with later on)
                         push(@{$matching_products}, $prod);
                     } else {
-                        $tmp_matching_products->{$_id_prod}->incr_intersection_with_ref();
+                        $tmp_matching_products->{$_id_prod}->Product::incr_intersection_with_ref();
                     }
                 }
             }

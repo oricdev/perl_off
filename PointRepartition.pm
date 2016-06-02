@@ -28,25 +28,19 @@ sub new_positions_disc_coordinates {
     my ( $self ) = @_;
     my $number_of_particles = $self->{nb_particles};
     my @radius = Math::Random::random_uniform ($number_of_particles, 0, 1);
-    print "radius = ", @radius, "\n";
-    my @theta = Math::Random::random_uniform ($number_of_particles, -Math::Trig::pi, Math::Trig::pi);
-    print "theta = ", @theta, "\n";
+    my @theta = Math::Random::random_uniform ($number_of_particles, -1, 1);
     my @x = ();
     my @y = ();
     my $nb_items = @radius;
     for (my $i = 0; $i < $nb_items; $i++)
     {
-        push (@x, $radius[$i] * sin($theta[$i]));
-        push (@y, $radius[$i] * cos($theta[$i]));
+        push (@x, $radius[$i] * sin($theta[$i] * Math::Trig::pi));
+        push (@y, $radius[$i] * cos($theta[$i] * Math::Trig::pi));
     }
 
-    print "xs' = ", @x, "\n";
-    print "ys' = ", @y, "\n";
     my @ret = ();
-    $ret[0] = @x;
-    $ret[1] = @y;
-    print "ret[0] = ", $ret[0], "\n";
-    print "ret[1] = ", $ret[1], "\n";
+    $ret[0] = \@x;
+    $ret[1] = \@y;
 
     return @ret;
 }
