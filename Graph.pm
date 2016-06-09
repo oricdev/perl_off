@@ -160,7 +160,7 @@ sub prepare_graph {
         push ( @{$self->{yaxis_others_distributed}}, $y_coord );
         my $code_mini_prod = $mini_prod->{"code"};
         my $url_prod = "http://fr.openfoodfacts.org/produit/${code_mini_prod}";
-        my $url_img = "http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg";
+        my $url_img = $mini_prod->{"image_front_url"} || "http://static.openfoodfacts.org/images/products/800/150/500/3529/front_fr.21.400.jpg";
         #        my $url_prod = "http://fr.on..../produit/${code_mini_prod}";
         #        my $url_img = "http://static.on..../images/products/" + (substr $code_mini_prod, 0, 3)."/"
         #            .(substr $code_mini_prod, 3, 3)."/"

@@ -1,12 +1,22 @@
 # perl_off
-to do: Graph->prepare_graph()
+Proof-Of-Concept: comparison graph of a selected product towards other more-or-less similar products
+
 
 <h2>Requirements</h2>
-Install the Math::Random Perl Package available here under the "download" link:
+a) Install the Math::Random Perl Package available here under the "download" link:
 http://search.cpan.org/~grommel/Math-Random-0.70/Random.pm
 
-Start the mongod server locally from the console:
+b) Start the mongod server locally from the console:
 mongod --httpinterface --rest --dbpath <off_db_path>/db_produits/dump/off-fr/
 
-run graph_comparator.pl
-open the generated output-file in a browser
+c) run graph_comparator.pl (hard-coded product-code can be updated manually on line 28 of graph_comparator.pl)
+
+d) open the generated output-file "_graph.html" in a browser
+
+<h2>to do</h2>
+* Querier->fetch() :: add fields projection
+* Limit of retrieved products is set to 50 per category since limit for outputting in file reached (see Querier->fecth() {... my $_tmp_nb_max = 50;... } )
+* to ,integrate from search.pl:
+    ** use Perl-HTML tags instead of outputting in a file
+    ** GET-parameters for product code
+* images of products should refer to field "image_front_url" (not available in Mongo-Db yet?)

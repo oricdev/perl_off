@@ -41,7 +41,7 @@ sub set_as_reference {
         $self->{score_proximity} = 1;
         # compute also the nutrition score
         $self->{score_nutrition} = $self->calc_score_nutrition();
-        print "score nutrition ref = ", $self->calc_score_nutrition(), "\n";
+        print "score nutrition of product reference = ", $self->calc_score_nutrition(), "\n";
     }
 }
 
