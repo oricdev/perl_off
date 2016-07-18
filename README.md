@@ -1,6 +1,6 @@
 # perl_off
-Proof-Of-Concept: comparison graph of a selected product towards other more-or-less similar products
-This project is a direct transcription in Perl from the Python project off_graph.
+Proof-Of-Concept: comparison graph of a selected product towards other more-or-less similar products.<br ∕>
+This project is a direct transcription in Perl from the Python project off_graph.<br ∕>
 Has been moved to <it>product-opener<∕it> for later integration.
 
 <h2>Requirements</h2>
