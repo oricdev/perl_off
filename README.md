@@ -1,7 +1,7 @@
 # perl_off
 Proof-Of-Concept for the OPENFOODFACTS project (http://openfoodfacts.org):<br />
 Comparison graph of a selected product towards other more-or-less similar products.<br ∕><br />
-This project is a direct transcription in Perl from the Python project "<a href='https://github.com/oricdev/off_graph.git'>off_graph</a>".<br ∕>
+This project is a direct transcription in Perl from the Python project <a href='https://github.com/oricdev/off_graph.git' target='blank' title='off_graph'>off_graph</a>.<br ∕>
 Has been moved to "product-opener" for later integration.
 
 <h2>Requirements</h2>
