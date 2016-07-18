@@ -1,7 +1,7 @@
 # perl_off
 Proof-Of-Concept: comparison graph of a selected product towards other more-or-less similar products.<br ∕>
 This project is a direct transcription in Perl from the Python project off_graph.<br ∕>
-Has been moved to <it>product-opener<∕it> for later integration.
+Has been moved to <i>product-opener<∕i> for later integration.
 
 <h2>Requirements</h2>
 a) Install the Math::Random Perl Package available here under the "download" link:
