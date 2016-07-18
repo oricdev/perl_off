@@ -1,5 +1,6 @@
 # perl_off
-Proof-Of-Concept: comparison graph of a selected product towards other more-or-less similar products.<br ∕>
+Proof-Of-Concept for the OPENFOODFACTS project (http://openfoodfacts.org):<br />
+Comparison graph of a selected product towards other more-or-less similar products.<br ∕><br />
 This project is a direct transcription in Perl from the Python project "off_graph".<br ∕>
 Has been moved to "product-opener" for later integration.
 
